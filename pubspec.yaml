@@ -24,3 +24,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+# record_android 1.4+ precisa de Flutter mais novo; esta versão funciona com o 3.24
+dependency_overrides:
+  record_android: 1.3.0
