@@ -33,7 +33,7 @@ class Cover extends StatelessWidget {
           width: size,
           height: size,
           fit: BoxFit.cover,
-          errorBuilder: (_, __, ___) => fallback),
+          errorBuilder: (_, _, _) => fallback),
     );
   }
 }

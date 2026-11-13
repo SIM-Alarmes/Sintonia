@@ -180,7 +180,7 @@ class _Ring extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedBuilder(
       animation: anim,
-      builder: (_, __) {
+      builder: (_, _) {
         final t = (anim.value + delay) % 1;
         return Opacity(
           opacity: (1 - t) * .8,

@@ -34,7 +34,7 @@ ThemeData buildTheme() {
     ),
     navigationBarTheme: NavigationBarThemeData(
       backgroundColor: AppColors.panel,
-      indicatorColor: AppColors.hot.withOpacity(.18),
+      indicatorColor: AppColors.hot.withValues(alpha: .18),
       iconTheme: WidgetStateProperty.resolveWith((s) => IconThemeData(
           color: s.contains(WidgetState.selected)
               ? AppColors.hot

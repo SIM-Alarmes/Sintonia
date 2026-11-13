@@ -57,7 +57,7 @@ class ResultScreen extends StatelessWidget {
           if (free != null) ...[
             ListenableBuilder(
               listenable: store,
-              builder: (_, __) {
+              builder: (_, _) {
                 final done = store.isDownloaded(free.id);
                 final p = store.inProgress[free.id];
                 return FilledButton.icon(
@@ -160,7 +160,7 @@ class _Chip extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
         decoration: BoxDecoration(
-            color: color.withOpacity(.14),
+            color: color.withValues(alpha: .14),
             borderRadius: BorderRadius.circular(99)),
         child: Text(
             free
