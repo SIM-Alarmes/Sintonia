@@ -15,6 +15,8 @@ class Config {
   /// Quantos segundos o app escuta antes de tentar reconhecer.
   static const listenSeconds = 8;
 
-  static bool get hasAudd => !auddToken.startsWith('COLE_');
-  static bool get hasJamendo => !jamendoClientId.startsWith('COLE_');
+  static bool get hasAudd =>
+      auddToken.isNotEmpty && !auddToken.startsWith('COLE_');
+  static bool get hasJamendo =>
+      jamendoClientId.isNotEmpty && !jamendoClientId.startsWith('COLE_');
 }
